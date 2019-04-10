@@ -18,7 +18,7 @@ responses_long$short_description <- reorder(
 )
   
 # Create a violin plot to show distribution of responses
-ggplot(long, aes(short_description, severity)) +
+ggplot(responses_long, aes(short_description, severity)) +
   geom_violin(draw_quantiles = c(0.5)) +
   labs(x="Description", y="Disability Weight", 
        title="Distribution of Disability Weights") +
